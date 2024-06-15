@@ -7,7 +7,7 @@ while task.wait(0.01) do
         local humanoid = character:WaitForChild("Humanoid")
         local rootPart = character:WaitForChild("HumanoidRootPart")
         local position = rootPart.Position
-        newPart.Position = rootPart.Position + Vector3.new(0, -2.2, 0)
+        newPart.Position = rootPart.Position + Vector3.new(0, -3.5, 0)
         newPart.Rotation = rootPart.Rotation + Vector3.new(0, 90, 0)
         if newPart.AssemblyLinearVelocity.Y <= -150 then
             newPart.AssemblyLinearVelocity = Vector3.new(
