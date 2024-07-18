@@ -72,22 +72,3 @@ ca:BindAction("zeezyAirjump",zeezyAirjump,false,AirjumpKey)
 
 print(scriptname .. " " .. ver .. " loaded successfully")
 print("made by Zeezy#7203")
-
-local notifSound = Instance.new("Sound",workspace)
-notifSound.PlaybackSpeed = 1.5
-notifSound.Volume = 0.15
-notifSound.SoundId = "rbxassetid://170765130"
-notifSound.PlayOnRemove = true
-notifSound:Destroy()
-game.StarterGui:SetCore("SendNotification", {Title = "feFlip", Text = "feFlip loaded successfully!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
-end)
-
-MainSection:NewToggle("Super Human", "Jump High and walk really fast", function(state)
-    if state then
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
-    else
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-    end
-end)
